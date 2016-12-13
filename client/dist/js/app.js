@@ -98,8 +98,8 @@
 	  }, {
 	    key: 'handleLogin',
 	    value: function handleLogin() {
-	      _axios2.default.get('/auth/github').then().catch();
-	      // location.href = '/auth/github'
+	      // axios.get('/auth/github').then().catch();
+	      location.href = '/auth/github';
 	    }
 	  }, {
 	    key: 'handleLogout',

@@ -21,8 +21,8 @@ class App extends React.Component {
   }
 
   handleLogin() {
-    axios.get('/auth/github').then().catch();
-    // location.href = '/auth/github'
+    // axios.get('/auth/github').then().catch();
+    location.href = '/auth/github'
   }
 
   handleLogout() {
