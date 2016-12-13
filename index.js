@@ -7,14 +7,14 @@ const app = express();
 
 const GithubStrategy = require('passport-github2').Strategy;
 
-const clientID = "ffd10470e3eb457e804c",
-const clientSecret = "10a0edf349ea3a70f82abc87bda76a3229ba1199",
-const callbackURL = "http://127.0.0.1:3000/auth/github/callback"
+const clientID = "ffd10470e3eb457e804c";
+const clientSecret = "10a0edf349ea3a70f82abc87bda76a3229ba1199";
+const callbackURL = "http://127.0.0.1:3000/auth/github/callback";
 
 if (process.env.NODE_ENV === 'production') {
-  const clientID = "ffd10470e3eb457e804c",
-  const clientSecret = "10a0edf349ea3a70f82abc87bda76a3229ba1199",
-  const callbackURL = "http://127.0.0.1:3000/auth/github/callback"
+  const clientID = "bee8d111fc908ee1cbfd";
+  const clientSecret = "ef6191e96039c4b492b14e0768edf57abb9694c8";
+  const callbackURL = "https://damp-harbor-12298.herokuapp.com/auth/github/callback";
 }
 
 passport.use(new GithubStrategy({
