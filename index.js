@@ -29,7 +29,7 @@ passport.use(new GithubStrategy({
 ));
 
 const ensureAuthenticated = (req, res, next) => {
-  if (!req.isAuthenticated()) return res.status(401).redirect('/');
+  if (!req.isAuthenticated()) return res.sendStatus(401);
   next();
 }
 
